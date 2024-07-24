@@ -1,8 +1,10 @@
+import {Header} from './Components'
+
 function App() {
 
   return (
     <>
-      <h1>My portfolio</h1>
+      <Header/>
     </>
   )
 }

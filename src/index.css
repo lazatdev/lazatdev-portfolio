@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.active
+{
+    @apply text-primary md:text-white;
+    @apply bg-secondary md:bg-primary;
+}
