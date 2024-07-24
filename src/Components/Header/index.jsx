@@ -1,6 +1,7 @@
 import Logo from '../../assets/logo.png'
 import { NAV_MENU_ITEMS } from '../../Constants'
 import { useState } from 'react'
+import {Container} from '../../Components'
 
 export const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -9,7 +10,7 @@ export const Header = () => {
     }
     return(
         <header id="header" className="py-2 bg-white">
-            <div className="container px-3 md:px-5 mx-auto flex justify-between items-center flex-wrap">
+            <Container className="flex justify-between items-center flex-wrap">
                 <a href="#home">
                     <img className="w-[120px]" src={Logo} alt="logo"/>
                 </a>
@@ -26,7 +27,7 @@ export const Header = () => {
                 </button>
                 <nav className={`${isMenuOpen ? 'top-14' : '-top-full'} -z-10  md:z-10 transition-[top] duration-500
                                 w-full md:w-auto -mr-3 absolute md:static left-0 bg-primary md:bg-transparent ease-in-out`}>
-                    <div className="container mx-auto px-3">
+                    <Container>
                         <ul className="flex flex-col py-2 md:py-0 md:flex-row space-y-1 md:space-y-0 md:space-x-1">
                             {NAV_MENU_ITEMS.map((item, index) => (
                                 <li key={index}>
@@ -38,9 +39,9 @@ export const Header = () => {
                                 </li>
                             ))}
                         </ul>
-                    </div>
+                    </Container>
                 </nav>
-            </div>
+            </Container>
         </header>
     )
 }
