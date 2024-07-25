@@ -5,7 +5,7 @@ export const NAV_MENU_ITEMS = ["home","about","portfolio","contact"]
 export const JUMBOTRON_CONTENT = {
     welcomeMsg: "hello, i am",
     fullName: "mohammed adam lazazat",
-    profileDescrirption: `a frontend developer with 2 years of experience working 
+    profileDescrirption: `A frontend developer with 2 years of experience working 
                          at building user interfaces using HTML/CSS/JavaScript/React.`
 }
 
