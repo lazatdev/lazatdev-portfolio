@@ -1,5 +1,5 @@
 import {Header} from './Components'
-import {IntroSection} from './Components/'
+import {IntroSection, AboutSection} from './Components/'
 
 function App() {
 
@@ -8,6 +8,7 @@ function App() {
       <Header/>
       <main>
         <IntroSection/>
+        <AboutSection/>
       </main>
     </>
   )
