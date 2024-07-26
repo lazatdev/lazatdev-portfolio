@@ -6,7 +6,7 @@ export const IntroSection = () =>
     return(
         <section 
             id="intro" 
-            className="absolute -z-30 top-0 h-screen w-full bg-cover bg-top" 
+            className="relative -z-30 top-0 h-screen w-full bg-cover bg-top" 
             style={{backgroundImage: `url(${BackgroundImg})`}}
         >
             <div className="overlay absolute top-0 h-full w-full bg-black -z-10 opacity-50"></div>
