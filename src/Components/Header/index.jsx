@@ -9,7 +9,8 @@ export const Header = () => {
         setIsMenuOpen(!isMenuOpen)
     }
     return(
-        <header id="header" className="py-2 bg-white absolute left-0 right-0 ">
+        <header id="header" className="py-2 z-10 absolute left-0 right-0 ">
+            <div className="bg-white absolute top-0 h-full w-full -z-10"></div>
             <Container className="flex justify-between items-center flex-wrap">
                 <a href="#home">
                     <img className="w-[120px]" src={Logo} alt="logo"/>
@@ -25,7 +26,7 @@ export const Header = () => {
                     <span className='bar block h-[3px] w-4 bg-primary group-hover:bg-white transition-colors duration-300'></span>
                     <span className='bar block h-[3px] w-4 bg-primary group-hover:bg-white transition-colors duration-300'></span>
                 </button>
-                <nav className={`${isMenuOpen ? 'top-14' : '-top-[255%]'} -z-10  md:z-10 transition-[top] duration-500
+                <nav className={`${isMenuOpen ? 'top-14' : '-top-[255%]'} -z-30 md:z-10 transition-[top] duration-500
                                 md:-mr-5 w-full md:w-auto absolute md:static left-0 bg-primary md:bg-transparent ease-in-out`}>
                     <Container>
                         <ul className="flex flex-col py-2 md:py-0 md:flex-row space-y-1 md:space-y-0 md:space-x-1">

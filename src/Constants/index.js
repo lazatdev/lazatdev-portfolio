@@ -1,3 +1,6 @@
+import AboutImage from '../assets/about-img.png'
+import {FaHtml5, FaCss3Alt, FaJs, FaReact, FaGit, FaGithub} from 'react-icons/fa'
+
 // Header Section
 export const NAV_MENU_ITEMS = ["home","about","portfolio","contact"]
 
@@ -11,15 +14,17 @@ export const JUMBOTRON_CONTENT = {
 
 // About Section
 export const ABOUT_CONTENT = {
-    aboutImg: "",
+    aboutImg: AboutImage,
     aboutDetails: {
         aboutMe: {
-            title: "",
-            text: "",
+            title: "who i am ?",
+            text: `BAC+2 Diploma holder at ISTA in IT Developement. 
+                   As a Frontend Developer i was building web pages during i improved my technical knowledge. 
+                   Now, i am looking for new opportunities.`,
             aboutSkills: {
-                title: "",
-                text: "",
-                mySkillsIcons: []
+                title: "my skills",
+                text: "I master many skills",
+                mySkillsIcons: [FaHtml5, FaCss3Alt, FaJs, FaReact, FaGit, FaGithub]
             }
         }
     }
