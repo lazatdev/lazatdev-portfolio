@@ -1,4 +1,4 @@
-import AboutImage from '../assets/about-img.png'
+import Images from '../images'
 import {FaHtml5, FaCss3Alt, FaJs, FaReact, FaGit, FaGithub} from 'react-icons/fa'
 
 // Header Section
@@ -14,7 +14,7 @@ export const JUMBOTRON_CONTENT = {
 
 // About Section
 export const ABOUT_CONTENT = {
-    aboutImg: AboutImage,
+    aboutImg: Images.aboutImage,
     aboutDetails: {
         aboutMe: {
             title: "who i am ?",
@@ -31,32 +31,56 @@ export const ABOUT_CONTENT = {
 }
 
 // Portfolio Section
-const PORTFOLIO_FILTERS = ["all","html","css","javascript","react"]
+export const PORTFOLIO_FILTERS = ["all","html","css","bootstrap","sass","javascript","react"]
 
-const PORTFOLIO_ITEMS = [
+export const PORTFOLIO_ITEMS = [
     {
         id: 1,
-        img: "",
-        title: "",
-        description: "",
-        links: {},
+        img: Images.qrCodeImage,
+        title: "QR code component",
+        description: "This is my first challenge, i built a simple component using languages below.",
+        links: {
+            githubLink: "https://github.com/lazatdev/QR-Code-Component",
+            uiDesignLink: "",
+            previewLink: "https://lazatdev.github.io/QR-Code-Component/"
+        },
         tags: ["html","css"]
     },
     {
         id: 2,
-        img: "",
-        title: "",
-        description: "",
-        links: {},
+        img: Images.productPreviewImage,
+        title: "product preview component",
+        description: "This is my second challenge, i built a simple component using languages below.",
+        links: {
+            githubLink: "",
+            uiDesignLink: "",
+            previewLink: ""
+        },
         tags: ["html","css"]
     },
     {
         id: 3,
-        img: "",
-        title: "",
-        description: "",
-        links: {},
-        tags: ["html","css"]
+        img: Images.landingPageImage,
+        title: "bookmark landing page",
+        description: "This is my third challenge, i built a landing page using languages below.",
+        links: {
+            githubLink: "",
+            uiDesignLink: "",
+            previewLink: ""
+        },
+        tags: ["html","css","sass","bootstrap"]
+    },
+    {
+        id: 4,
+        img: Images.TodoListImage,
+        title: "todo list app",
+        description: "build a react app that can managae your todo.",
+        links: {
+            githubLink: "",
+            uiDesignLink: "",
+            previewLink: ""
+        },
+        tags: ["html","css","sass","javascript","react"]
     }
 ]
 
