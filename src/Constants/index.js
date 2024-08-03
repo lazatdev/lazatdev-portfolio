@@ -1,5 +1,5 @@
 import Images from '../images'
-import {FaHtml5, FaCss3Alt, FaJs, FaReact, FaGit, FaGithub} from 'react-icons/fa'
+import {FaHtml5, FaCss3Alt, FaJs, FaReact, FaGit, FaGithub, FaWhatsapp, FaMapMarkerAlt, FaEnvelope} from 'react-icons/fa'
 
 // Header Section
 export const NAV_MENU_ITEMS = ["home","about","portfolio","contact"]
@@ -86,7 +86,7 @@ export const PORTFOLIO_ITEMS = [
 
 // Contact Section
 export const CONTACT_INFOS = {
-    phoneNumberContact: {icon: "", title: "", phoneNumber: ""},
-    loctionContact: {icon: "", title: "", location: ""},
-    emailContact: {icon: "", title: "", email: ""}
+    phoneNumberContact: {icon: FaWhatsapp, title: "whatsapp", text: "+212 641 813 652"},
+    loctionContact: {icon: FaMapMarkerAlt, title: "location", text: "casablanca, morocco"},
+    emailContact: {icon: FaEnvelope, title: "email", text: "lazatdev@gmail.com"}
 }

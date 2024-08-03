@@ -1,5 +1,5 @@
 import {Header} from './Components'
-import {IntroSection, AboutSection, PortfolioSection} from './Components/'
+import {IntroSection, AboutSection, PortfolioSection, ContactSection} from './Components/'
 
 function App() {
 
@@ -10,6 +10,7 @@ function App() {
         <IntroSection/>
         <AboutSection/>
         <PortfolioSection/>
+        <ContactSection/>
       </main>
     </>
   )
