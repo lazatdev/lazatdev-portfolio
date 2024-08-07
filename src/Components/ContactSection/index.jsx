@@ -4,7 +4,10 @@ import {CONTACT_INFOS} from '../../Constants'
 export const ContactSection = () =>
 {
     return (
-        <section id="contact" className="bg-third py-10">
+        <section 
+            id="contact" 
+            className="bg-third"
+        >
             <Container>
                 <SpecialHeading title="contact" description="Get in touch with me"/>
                 <div className="contact-infos mt-4 grid grid-cols-1 md:grid-cols-3 justify-items-center">

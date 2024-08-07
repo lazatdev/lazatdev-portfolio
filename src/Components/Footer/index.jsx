@@ -1,10 +1,10 @@
 import {Container} from '../../Components'
 import {LINKS} from '../../Constants'
 
-export const Footer = () =>
+export const Footer = ({footerRef}) =>
 {
     return (
-        <footer id="footer" className="py-5 bg-primary text-third">
+        <footer id="footer" className="py-5 bg-primary text-third" ref={footerRef}>
             <Container className="flex justify-between items-center">
                 <p className="text capitalize text-[21px] font-[300]">
                     made by

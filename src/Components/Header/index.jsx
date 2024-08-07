@@ -1,13 +1,52 @@
 import Logo from '../../assets/logo.png'
 import { NAV_MENU_ITEMS } from '../../Constants'
-import { useState } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import {Container} from '../../Components'
 
-export const Header = () => {
+export const Header = ({footerRef}) => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
+    const btnRef = useRef(null)
+
+    useEffect(() => {
+        window.addEventListener('scroll',() => {
+            const footerHeight = footerRef.current.clientHeight 
+            const bodyHeight = document.body.clientHeight
+            const windowHeight = window.innerHeight
+            
+            if(window.scrollY >= 300)
+            {
+                btnRef.current.classList.remove('hidden')
+            }
+            else 
+            {
+                btnRef.current.classList.add('hidden')
+            }
+
+            if(window.scrollY >=  bodyHeight - windowHeight - footerHeight)
+            {
+                btnRef.current.classList.remove('bottom-4')
+                btnRef.current.classList.add('bottom-24')
+            }
+            else
+            {
+                btnRef.current.classList.remove('bottom-24')
+                btnRef.current.classList.add('bottom-4')
+            }
+        })
+    })
+
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen)
     }
+
+    const scrollTop = () =>
+    {
+        window.scroll({
+            top: 0,
+            behavior: 'smooth'
+        })
+    }
+
     return(
         <header id="header" className="py-2 z-10 absolute left-0 right-0 ">
             <div className="bg-white absolute top-0 h-full w-full -z-10"></div>
@@ -43,6 +82,13 @@ export const Header = () => {
                     </Container>
                 </nav>
             </Container>
+            <button 
+                ref={btnRef} 
+                className="scroll-top hidden bg-primary fixed right-4 bottom-4 text-third p-3 rounded-md"
+                onClick={scrollTop}
+            >
+                Scroll Top 
+            </button>
         </header>
     )
 }
