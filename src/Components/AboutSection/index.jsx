@@ -7,10 +7,10 @@ export const AboutSection = () =>
             <Container>
                 <SpecialHeading title="About" description="A bref personal introduction"/>
                 <div className="about-info text-[21px] grid grid-cols-1 md:grid-cols-3 gap-x-[16px] justify-items-center md:justify-items-end mt-10">
-                    <img className="about-img rounded-md" src={ABOUT_CONTENT.aboutImg} alt="about image"/>
+                    <img className="about-img rounded-md md:justify-self-start" src={ABOUT_CONTENT.aboutImg} alt="about image"/>
                     <div className="about-details md:-mt-3 text-center md:text-left md:col-span-2">
                         <h3 className="font-bold capitalize text-[29px] mt-3 md:mt-0">{ABOUT_CONTENT.aboutDetails.aboutMe.title}</h3>
-                        <p className="tracking-wide font-light">{ABOUT_CONTENT.aboutDetails.aboutMe.text}</p>
+                        <p className="tracking-wide font-light md:text-justify">{ABOUT_CONTENT.aboutDetails.aboutMe.text}</p>
                         <div className="about-skills mt-3">
                             <h3 className="font-bold capitalize text-[29px]">{ABOUT_CONTENT.aboutDetails.aboutMe.aboutSkills.title}</h3>
                             <p className="tracking-wide font-light">

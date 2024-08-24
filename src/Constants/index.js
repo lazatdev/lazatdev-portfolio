@@ -24,7 +24,8 @@ export const ABOUT_CONTENT = {
             title: "who i am ?",
             text: `BAC+2 Diploma holder at ISTA in IT Developement. 
                    As a Frontend Developer i was building web pages during i improved my technical knowledge. 
-                   Now, i am looking for new opportunities.`,
+                   Now, i am looking for new opportunities. So that i can put into practice my frontend
+                   developement skills`,
             aboutSkills: {
                 title: "my skills",
                 text: "I master many skills",
@@ -45,7 +46,7 @@ export const PORTFOLIO_ITEMS = [
         description: "This is my first challenge, i built a simple component using languages below.",
         links: {
             githubLink: "https://github.com/lazatdev/QR-Code-Component",
-            uiDesignLink: "",
+            uiDesignLink: "https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H",
             previewLink: "https://lazatdev.github.io/QR-Code-Component/"
         },
         tags: ["html","css"]
@@ -56,9 +57,9 @@ export const PORTFOLIO_ITEMS = [
         title: "product preview component",
         description: "This is my second challenge, i built a simple component using languages below.",
         links: {
-            githubLink: "",
-            uiDesignLink: "",
-            previewLink: ""
+            githubLink: "https://github.com/lazatdev/Product-Preview-Card-Component",
+            uiDesignLink: "https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa",
+            previewLink: "https://lazatdev.github.io/Product-Preview-Card-Component/"
         },
         tags: ["html","css"]
     },
@@ -68,9 +69,9 @@ export const PORTFOLIO_ITEMS = [
         title: "bookmark landing page",
         description: "This is my third challenge, i built a landing page using languages below.",
         links: {
-            githubLink: "",
-            uiDesignLink: "",
-            previewLink: ""
+            githubLink: "https://github.com/lazatdev/Bookmark-Landing-Page-Master",
+            uiDesignLink: "https://www.frontendmentor.io/challenges/bookmark-landing-page-5d0b588a9edda32581d29158",
+            previewLink: "https://lazatdev.github.io/Bookmark-Landing-Page-Master/"
         },
         tags: ["html","css","sass","bootstrap"]
     },
@@ -80,9 +81,9 @@ export const PORTFOLIO_ITEMS = [
         title: "todo list app",
         description: "build a react app that can managae your todo.",
         links: {
-            githubLink: "",
+            githubLink: "https://github.com/lazatdev/todo-list-app",
             uiDesignLink: "",
-            previewLink: ""
+            previewLink: "https://lazatdev-todo-list-app.vercel.app/"
         },
         tags: ["html","css","sass","javascript","react"]
     }
@@ -92,14 +93,14 @@ export const PORTFOLIO_ITEMS = [
 export const CONTACT_INFOS = {
     phoneNumberContact: {icon: FaWhatsapp, title: "whatsapp", text: "+212 641 813 652"},
     loctionContact: {icon: FaMapMarkerAlt, title: "location", text: "casablanca, morocco"},
-    emailContact: {icon: FaEnvelope, title: "email", text: "lazatdev@gmail.com"}
+    emailContact: {icon: FaEnvelope, title: "email", text: "lazazat.adam@gmail.com"}
 }
 
 
 // Footer Section
 export const LINKS = [
     {icon: FaLinkedin, link: ""},
-    {icon: FaGithubSquare, link: ""},
-    {icon: FaInstagramSquare, link: ""},
+    {icon: FaGithubSquare, link: "https://github.com/lazatdev"},
+    {icon: FaInstagramSquare, link: "https://linkedin.com/in/lazazat-mohammed-adam"},
     {icon: FaFacebookSquare, link: ""}
 ]

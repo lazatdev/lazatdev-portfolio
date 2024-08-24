@@ -67,9 +67,9 @@ export const PortfolioSection = () =>
                                         onClick={() => showModal(item.id)}
                                     />
                                 </div>
-                                <div className="details px-5 py-5">
+                                <div className="details px-5 pt-3">
                                         <h3 
-                                            className="text-[23px] font-bold capitalize cursor-pointer text-primary translate-y-0 hover:translate-x-3 transition-transform duration-300 ease-in"
+                                            className="text-[23px] leading-[25px] mb-1 font-bold capitalize cursor-pointer text-primary translate-y-0 hover:translate-x-3 transition-transform duration-300 ease-in"
                                             onClick={() => showModal(item.id)}
                                         >
                                             {item.title}
@@ -78,11 +78,11 @@ export const PortfolioSection = () =>
                                     <p className="text-[19px] font-light">
                                         {item.description}
                                     </p>
-                                    <div className="tags space-x-1 mt-2">
+                                    <div className="tags mt-2 space-y-1">
                                         {
                                             item.tags.map((tag,index) => (
                                                 <span
-                                                    className="inline-block rounded-md text-white px-2 py-1 uppercase bg-primary/70" 
+                                                    className="inline-block mr-1 rounded-md text-white px-2 py-1 uppercase bg-primary/70" 
                                                     key={index}>
                                                     {tag}
                                                 </span>
@@ -141,27 +141,30 @@ export const PortfolioSection = () =>
                                             click here
                                         </a>
                                     </li>
-                                    <li className="font-[600] text-[19px] uppercase">
-                                        <span className="w-[150px] relative inline-block after:absolute after:right-3 after:content-[':']">
-                                            ui design
-                                        </span>
-                                        <a 
-                                            className="capitalize text-[19px] font-[500]" 
-                                            href={projectItem.links.uiDesignLink} 
-                                            target="_blank"
-                                        >
-                                            click here
-                                        </a>
-                                    </li>
-                                    <li className="font-[600] text-[19px] uppercase">
-                                        <span className="w-[150px] relative inline-block after:absolute after:right-3 after:content-[':']">
+                                    {
+                                        projectItem.links.uiDesignLink &&
+                                        (<li className="font-[600] text-[19px] uppercase">
+                                            <span className="w-[150px] relative inline-block after:absolute after:right-3 after:content-[':']">
+                                                ui design
+                                            </span>
+                                            <a 
+                                                className="capitalize text-[19px] font-[500]" 
+                                                href={projectItem.links.uiDesignLink} 
+                                                target="_blank"
+                                            >
+                                                click here
+                                            </a>
+                                        </li>)
+                                    }
+                                    <li className="font-[600] text-[19px] uppercase flex">
+                                        <span className="basis-[150px] shrink-0 relative inline-block after:absolute after:right-3 after:content-[':']">
                                             skills
                                         </span>
-                                        <div className="inline-flex flex-wrap">
+                                        <div className="space-y-1">
                                             {
                                                 projectItem.tags.map((tag,index) => (
                                                     <span
-                                                        className="inline-block rounded-md text-white mr-2 px-2 py-[2px] uppercase text-[15px] font-medium bg-primary/70" 
+                                                        className="inline-block rounded-md text-white mr-1 px-2 py-[2px] uppercase text-[15px] font-medium bg-primary/70" 
                                                         key={index}>
                                                         {tag}
                                                     </span>

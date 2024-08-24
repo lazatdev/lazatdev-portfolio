@@ -23,8 +23,8 @@ export const IntroSection = () =>
                         {JUMBOTRON_CONTENT.profileDescrirption}
                     </p>
                     <div className="more my-3 space-x-2">
-                        <a href="#" className="inline-block px-4 py-2 bg-primary rounded-md text-white border-white border-solid border-2 hover:bg-secondary hover:text-primary hover:border-primary transition-colors duration-500 uppercase">portfolio</a>
-                        <a href="#" className="inline-block px-4 py-2 bg-primary rounded-md text-white border-white border-solid border-2 hover:bg-secondary hover:text-primary hover:border-primary transition-colors duration-500 uppercase">Contact me</a>
+                        <a href="#portfolio" className="inline-block px-4 py-2 bg-primary rounded-md text-white border-white border-solid border-2 hover:bg-secondary hover:text-primary hover:border-primary transition-colors duration-500 uppercase">portfolio</a>
+                        <a href="#contact" className="inline-block px-4 py-2 bg-primary rounded-md text-white border-white border-solid border-2 hover:bg-secondary hover:text-primary hover:border-primary transition-colors duration-500 uppercase">Contact me</a>
                     </div>
                 </div>
             </Container>

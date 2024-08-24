@@ -2,6 +2,7 @@ import Logo from '../../assets/logo.png'
 import { NAV_MENU_ITEMS } from '../../Constants'
 import { useState, useRef, useEffect } from 'react'
 import {Container} from '../../Components'
+import { FaAngleUp } from 'react-icons/fa'
 
 export const Header = ({footerRef}) => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -67,19 +68,21 @@ export const Header = ({footerRef}) => {
                 </button>
                 <nav className={`${isMenuOpen ? 'top-14' : '-top-[255%]'} -z-30 md:z-10 transition-[top] duration-500
                                 md:-mr-5 w-full md:w-auto absolute md:static left-0 bg-primary md:bg-transparent ease-in-out`}>
-                    <Container>
+                    <div className="container mx-auto">
                         <ul className="flex flex-col py-2 md:py-0 md:flex-row space-y-1 md:space-y-0 md:space-x-1">
                             {NAV_MENU_ITEMS.map((item, index) => (
                                 <li key={index}>
-                                    <a className={`${item === 'home' ? 'active' : ''} uppercase block px-3 py-2 text-center rounded-md
+                                    <a 
+                                        className={`${item === 'home' ? 'active' : ''} uppercase block px-3 py-2 text-center rounded-md
                                                  md:hover:text-white md:hover:bg-primary transition-colors duration-300
                                                  hover:text-primary hover:bg-secondary
                                                  `} 
-                                    href={`#${item}`}>{item}</a>
+                                        href={`#${item}`}
+                                    >{item}</a>
                                 </li>
                             ))}
                         </ul>
-                    </Container>
+                    </div>
                 </nav>
             </Container>
             <button 
@@ -87,7 +90,7 @@ export const Header = ({footerRef}) => {
                 className="scroll-top hidden bg-primary fixed right-4 bottom-4 text-third p-3 rounded-md"
                 onClick={scrollTop}
             >
-                Scroll Top 
+                <FaAngleUp className="text-[23px]"/>
             </button>
         </header>
     )

@@ -6,7 +6,7 @@ export const ContactSection = () =>
     return (
         <section 
             id="contact" 
-            className="bg-third"
+            className="bg-third py-10"
         >
             <Container>
                 <SpecialHeading title="contact" description="Get in touch with me"/>
